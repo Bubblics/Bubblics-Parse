@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "InstaStckr": {
+      "applicationId": "xRmLMsYx5yWnE3JWYPYIToUm0NPqacXVr8jFoU6C"
+    },
+    "_default": {
+      "link": "InstaStckr"
+    }
+  }
+}
