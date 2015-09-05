@@ -1,59 +1,125 @@
-#screenshots {
-
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+   font-family: Roboto;
+   font-weight: 100;
+   color: #000000;
+   text-align: center;
+   line-height: 170%;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+h2, .h2 {
+   font-size: 26px;
+}
+h4, .h4 {
+   font-size: 18px;
+}
+@media (max-width: 767px) {
+   h2, .h2 {
+      font-size: 20px;
+   }
 }
 
+#pickupline-text {
+  margin-top: 61px;
+  margin-bottom: 51px;
+}
+@media (max-width: 767px) {
+   #pickupline-text {
+      margin-top: 33px;
+      margin-bottom: 23px;
+   }
+}
+
+#screenshots {
+   width: 986px;
+   margin-bottom: 70px;
+}
 .screenshots {
    width: 280px;
    height: 490px;
    border-image-width: 0;
+   margin-left: 18px;
+   margin-right: 18px;
+}
+@media (max-width: 985px) {
+   #screenshots {
+      width: 310px;
+      margin-bottom: 25px;
+   }
+   .screenshots {
+      width: 280px;
+      height: 490px;
+      border-image-width: 0;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+   }
 }
 
 #features {
-  background-color: #f15f26;
-  padding-top: 70px;
-  padding-bottom: 70px;
+   background-color: #f15f26;
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+#mainmenu {
+   width: 213px;
+   height: 121px;
+   margin-bottom: 30px;
+}
+#mainmenu-text {
+   max-width: 470px;
+   color: #ffffff;
+}
+#emoji {
+   width: 227px;
+   height: 82px;
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+#emoji-text {
+   max-width: 470px;
+   color: #ffffff;
 }
 @media (max-width: 767px) {
    #features {
       padding-top: 45px;
       padding-bottom: 45px;
    }
-}
-
-#mainmenu {
-  padding-bottom: 30px;
-}
-@media (max-width: 767px) {
    #mainmenu {
-      padding-bottom: 20px;
+      margin-bottom: 20px;
    }
-}
-
-#mainmenu-text {
-  max-width: 470px;
-}
-
-#emoji {
-  padding-top: 60px;
-  padding-bottom: 30px;
-}
-@media (max-width: 767px) {
    #emoji {
-      padding-top: 45px;
-      padding-bottom: 20px;
+      margin-top: 45px;
+      margin-bottom: 20px;
    }
 }
 
-.center {
-   display: block;
-   margin: auto;
-   color: #ffffff;
+#instagram {
+   padding-top: 70px;
+   padding-bottom: 70px;
 }
-
-h1, h2, h3, h4, h5, h6 {
-   font-family: Roboto;
-   font-weight: 100;
-   color: #000000;
-   text-align: center;
-   line-height: 170%;
+#hashtag {
+   width: 98px;
+   height: 29px;
+   margin-bottom: 30px;
+   background-image: url(/assets/images/1024px/instastckr_oninstagram.png);
+   background-repeat: no-repeat;
+}
+#samples {
+   width: 908px;
+}
+.samples {
+   width: 260px;
+   height: 260px;
+   margin: 15px;
+}
+@media (max-width: 907px) {
+   #samples {
+      width: 614px;
+   }
+}
+@media (max-width: 613px) {
+   #samples {
+      width: 320px;
+   }
 }
