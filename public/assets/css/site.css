@@ -1,0 +1,59 @@
+#screenshots {
+
+}
+
+.screenshots {
+   width: 280px;
+   height: 490px;
+   border-image-width: 0;
+}
+
+#features {
+  background-color: #f15f26;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (max-width: 767px) {
+   #features {
+      padding-top: 45px;
+      padding-bottom: 45px;
+   }
+}
+
+#mainmenu {
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+   #mainmenu {
+      padding-bottom: 20px;
+   }
+}
+
+#mainmenu-text {
+  max-width: 470px;
+}
+
+#emoji {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+   #emoji {
+      padding-top: 45px;
+      padding-bottom: 20px;
+   }
+}
+
+.center {
+   display: block;
+   margin: auto;
+   color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: Roboto;
+   font-weight: 100;
+   color: #000000;
+   text-align: center;
+   line-height: 170%;
+}
