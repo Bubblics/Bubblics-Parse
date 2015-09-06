@@ -22,14 +22,48 @@ h4, .h4 {
    }
 }
 
+header {
+   display: block;
+   width: 100%;
+   width: 100vw;
+   height: 100%;
+   height: 100vh;
+   min-height: 100%;
+   min-height: 100vh;
+}
+#background {
+   position: absolute;
+   background-image: url(/assets/images/1024px/bg_beachphoto.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   width: 100%;
+   height: 90%;
+   z-index: -1;
+}
+#instastckr {
+   position: relative;
+   width: 100%;
+   width: 100vw;
+   height: 100%;
+   height: 100vh;
+   min-height: 100%;
+   min-height: 100vh;
+}
+.instastckr {
+   position: absolute;
+   margin-bottom: -244px;
+   bottom: 30vh;
+}
+
 #pickupline-text {
-  margin-top: 61px;
-  margin-bottom: 51px;
+   padding-top: 61px;
+   padding-bottom: 51px;
 }
 @media (max-width: 767px) {
    #pickupline-text {
-      margin-top: 33px;
-      margin-bottom: 23px;
+      padding-top: 33px;
+      padding-bottom: 23px;
    }
 }
 
