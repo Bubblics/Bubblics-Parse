@@ -26,6 +26,9 @@
    <body>
       <header>
          <div id="background"></div>
+         <img id="heart" src="/assets/images/sticker_heart@3x.png"/>
+         <img id="sohooot" src="/assets/images/sticker_sohooot@3x.png"/>
+         <img id="yesiam" src="/assets/images/sticker_yesiam@3x.png"/>
          <div id="instastckr">
             <div class="instastckr container-fluid">
       			<img id="mockup" src="/assets/images/mockup@2x.png"/>
@@ -78,6 +81,23 @@
       <script src="/assets/js/wow.min.js"></script>
       <script>new WOW().init();</script>
       <script>
+         $( document ).ready(function() {
+            if (width <= 893) {
+               $("#instastckr").css("margin-top", 0);
+
+               $("#heart").css("display", "block");
+               $("#sohooot").css("display", "block");
+               $("#yesiam").css("display", "block");
+            } else {
+               $("#instastckr").css("margin-top", - 650 / 1024 * width * 0.30);
+
+               $("#heart").css("display", "none");
+               $("#sohooot").css("display", "none");
+               $("#yesiam").css("display", "none");
+            }
+         });
+      </script>
+      <script>
          var width = $(window).width();
          var height = $(window).height();
 
@@ -85,13 +105,38 @@
          $("#instastckr").css("height", 650 / 1024 * width * 0.80 + 250);
          $("#background").css("height", 650 / 1024 * width);
 
+         $("#heart").css("width", 55 / 1024 * width);
+         $("#heart").css("height", 56 / 1024 * width);
+         $("#heart").css("margin-top", 45 / 1024 * width);
+         $("#heart").css("margin-left", 230 / 1024 * width);
+
+         $("#sohooot").css("width", 148 / 1024 * width);
+         $("#sohooot").css("height", 56.5 / 1024 * width);
+         $("#sohooot").css("margin-top", 140 / 1024 * width);
+         $("#sohooot").css("margin-left", 195 / 1024 * width);
+
+         $("#yesiam").css("width", 119 / 1024 * width);
+         $("#yesiam").css("height", 56.5 / 1024 * width);
+         $("#yesiam").css("margin-top", 170 / 1024 * width);
+         $("#yesiam").css("margin-left", 764 / 1024 * width);
+
          if (width / height > 1024/ 650)
             $("#background").css("background-size", "cover");
          else
             $("#background").css("background-size", "contain");
 
-         if (width < 893) {
+         if (width <= 893) {
+            $("#instastckr").css("margin-top", 0);
 
+            $("#heart").css("display", "block");
+            $("#sohooot").css("display", "block");
+            $("#yesiam").css("display", "block");
+         } else {
+            $("#instastckr").css("margin-top", - 650 / 1024 * width * 0.30);
+
+            $("#heart").css("display", "none");
+            $("#sohooot").css("display", "none");
+            $("#yesiam").css("display", "none");
          }
 
          $(window).resize(function() {
@@ -102,10 +147,39 @@
             $("#instastckr").css("height", 650 / 1024 * width * 0.80 + 250);
             $("#background").css("height", 650 / 1024 * width);
 
+            $("#heart").css("width", 55 / 1024 * width);
+            $("#heart").css("height", 56 / 1024 * width);
+            $("#heart").css("margin-top", 45 / 1024 * width);
+            $("#heart").css("margin-left", 230 / 1024 * width);
+
+            $("#sohooot").css("width", 148 / 1024 * width);
+            $("#sohooot").css("height", 56.5 / 1024 * width);
+            $("#sohooot").css("margin-top", 140 / 1024 * width);
+            $("#sohooot").css("margin-left", 195 / 1024 * width);
+
+            $("#yesiam").css("width", 119 / 1024 * width);
+            $("#yesiam").css("height", 56.5 / 1024 * width);
+            $("#yesiam").css("margin-top", 170 / 1024 * width);
+            $("#yesiam").css("margin-left", 764 / 1024 * width);
+
             if (width / height > 1024/ 650)
                $("#background").css("background-size", "cover");
             else
                $("#background").css("background-size", "contain");
+
+            if (width <= 893) {
+               $("#instastckr").css("margin-top", 0);
+
+               $("#heart").css("display", "block");
+               $("#sohooot").css("display", "block");
+               $("#yesiam").css("display", "block");
+            } else {
+               $("#instastckr").css("margin-top", - 650 / 1024 * width * 0.30);
+
+               $("#heart").css("display", "none");
+               $("#sohooot").css("display", "none");
+               $("#yesiam").css("display", "none");
+            }
          });
       </script>
    </body>

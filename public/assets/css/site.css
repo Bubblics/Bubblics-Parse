@@ -51,9 +51,21 @@ header {
    z-index: -1;
    width: 100%;
 }
+#heart {
+   position: absolute;
+   display: none;
+}
+#sohooot {
+   position: absolute;
+   display: none;
+}
+#yesiam {
+   position: absolute;
+   display: none;
+}
 #instastckr {
    position: relative;
-   height: 1000px;
+   height: 4000px;
 }
 .instastckr {
    position: absolute;
