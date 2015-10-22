@@ -1,3 +1,4 @@
+/* Basic Styles */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    font-family: "Work Sans";
    font-weight: 200;
@@ -38,7 +39,7 @@ header {
 }
 #background {
    position: absolute;
-   background-image: url(/assets/images/1024px/bg_beachphoto.png);
+   background-image: url(/assets/images/bg_beachphoto.png);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: bottom;
@@ -62,8 +63,8 @@ header {
    left: 50vw;
 }
 #mockup {
-   width: 505px;
-   height: 487px;
+   width: 515px;
+   height: 503px;
 }
 #logo-block {
    width: 310px;
@@ -71,6 +72,10 @@ header {
    vertical-align: bottom;
    margin-left: 50px;
    margin-bottom: 43px;
+}
+#logo {
+   width: 202.5px;
+   height: 23px;
 }
 #description {
    text-align: left;
@@ -89,7 +94,8 @@ header {
    margin-left: -2px;
    margin-top: -2px;
    margin-bottom: -2px;
-   background-image: url(/assets/images/1024px/appbutton_appstore.png);
+   background-image: url(/assets/images/appbutton_appstore@2x.png);
+   background-size: 132px 40px;
    background-repeat: no-repeat;
 }
 #play-store {
@@ -97,7 +103,8 @@ header {
    width: 132px;
    height: 40px;
    margin: -2px;
-   background-image: url(/assets/images/1024px/appbutton_googleplay.png);
+   background-image: url(/assets/images/appbutton_googleplay@2x.png);
+   background-size: 132px 40px;
    background-repeat: no-repeat;
 }
 
@@ -117,8 +124,8 @@ header {
    margin-bottom: 70px;
 }
 .screenshots {
-   width: 280px;
-   height: 490px;
+   width: 275px;
+   height: 485px;
    border-image-width: 0;
    margin-left: 18px;
    margin-right: 18px;
@@ -129,8 +136,8 @@ header {
       margin-bottom: 25px;
    }
    .screenshots {
-      width: 280px;
-      height: 490px;
+      width: 275px;
+      height: 485px;
       border-image-width: 0;
       margin-left: 0px;
       margin-right: 0px;
@@ -143,22 +150,22 @@ header {
    padding-top: 70px;
    padding-bottom: 70px;
 }
-#mainmenu {
-   width: 213px;
-   height: 121px;
-   margin-bottom: 30px;
-}
-#mainmenu-text {
-   max-width: 470px;
-   color: #ffffff;
-}
 #emoji {
-   width: 227px;
-   height: 82px;
-   margin-top: 60px;
+   width: 221px;
+   height: 80px;
    margin-bottom: 30px;
 }
 #emoji-text {
+   max-width: 470px;
+   color: #ffffff;
+}
+#mainmenu {
+   width: 221px;
+   height: 119px;
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+#mainmenu-text {
    max-width: 470px;
    color: #ffffff;
 }
@@ -181,19 +188,15 @@ header {
    padding-bottom: 70px;
 }
 #hashtag {
-   width: 98px;
-   height: 29px;
+   width: 105px;
+   height: 27px;
+   background:url(/assets/images/instastckr_oninstagram@2x.png) no-repeat;
+   background-size: 105px 27px;
    margin-bottom: 30px;
-   background-image: url(/assets/images/1024px/instastckr_oninstagram.png);
-   background-repeat: no-repeat;
 }
+
 #samples {
    width: 908px;
-}
-.samples {
-   width: 260px;
-   height: 260px;
-   margin: 15px;
 }
 @media (max-width: 907px) {
    #samples {
@@ -204,4 +207,9 @@ header {
    #samples {
       width: 320px;
    }
+}
+.samples {
+   width: 260px;
+   height: 260px;
+   margin: 15px;
 }
