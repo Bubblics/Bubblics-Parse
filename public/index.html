@@ -9,7 +9,7 @@
       <meta name="author" content="The Finest Artist">
 
       <title>InstaStckr</title>
-      <meta name="description" content="Tag your photos with Special Emojis and Customisable Sticker.">
+      <meta name="description" content="Tag your photos with Special Emojis and Customisable Stickers.">
 
       <link rel="shortcut icon" type="image/x-icon" href="/assets/icons/favicon.ico"/>
       <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/144.png" />
@@ -31,7 +31,7 @@
       			<img id="mockup" src="/assets/images/mockup@2x.png"/>
                <div id="logo-block">
                   <img id="logo" src="/assets/images/instastckr_logo@2x.png"/>
-                  <h2 id="description">Tag your photos with Special Emojis and Customisable Sticker.</h2>
+                  <h2 id="description">Tag your photos with Special Emojis and Customisable Stickers.</h2>
                   <div id="store-block" class="container-fluid">
             			<a id="app-store" href="https://instagram.com/explore/tags/instastckr/" target="_blank"></a>
             			<a id="play-store" href="https://play.google.com/store/apps/details?id=com.instastckr" target="_blank"></a>
@@ -42,7 +42,7 @@
       </header>
 
       <div id="pickupline">
-         <h2 id="pickupline-text">Add stickers on your photos.<br>Share on Instagram</h2>
+         <h3 id="pickupline-text">Add stickers on your photos.<br>Share on Instagram</h3>
       </div>
 
       <div id="screenshots" class="container-fluid">
@@ -77,5 +77,36 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script src="/assets/js/wow.min.js"></script>
       <script>new WOW().init();</script>
+      <script>
+         var width = $(window).width();
+         var height = $(window).height();
+
+         $("#instastckr").css("width", width);
+         $("#instastckr").css("height", 650 / 1024 * width * 0.80 + 250);
+         $("#background").css("height", 650 / 1024 * width);
+
+         if (width / height > 1024/ 650)
+            $("#background").css("background-size", "cover");
+         else
+            $("#background").css("background-size", "contain");
+
+         if (width < 893) {
+
+         }
+
+         $(window).resize(function() {
+            var width = $(window).width();
+            var height = $(window).height();
+
+            $("#instastckr").css("width", width);
+            $("#instastckr").css("height", 650 / 1024 * width * 0.80 + 250);
+            $("#background").css("height", 650 / 1024 * width);
+
+            if (width / height > 1024/ 650)
+               $("#background").css("background-size", "cover");
+            else
+               $("#background").css("background-size", "contain");
+         });
+      </script>
    </body>
 </html>

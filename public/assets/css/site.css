@@ -12,6 +12,11 @@ h2, .h2 {
    letter-spacing: 0.26px;
    line-height: 140%;
 }
+h3, .h3 {
+   font-size: 22px;
+   letter-spacing: 0.22px;
+   line-height: 140%;
+}
 h4, .h4 {
    font-size: 18px;
    letter-spacing: 0.18px;
@@ -26,41 +31,35 @@ h4, .h4 {
       letter-spacing: 0.2px;
       line-height: 160%;
    }
+   h3, .h3 {
+      font-size: 18px;
+      letter-spacing: 0.18px;
+      line-height: 160%;
+   }
 }
 
 header {
    display: block;
    width: 100%;
    width: 100vw;
-   height: 100%;
-   height: 100vh;
-   min-height: 100%;
-   min-height: 100vh;
 }
 #background {
    position: absolute;
    background-image: url(/assets/images/bg_beachphoto.png);
-   background-size: cover;
    background-repeat: no-repeat;
-   background-position: bottom;
-   width: 100%;
-   height: 85%;
+   background-position: top;
    z-index: -1;
+   width: 100%;
 }
 #instastckr {
    position: relative;
-   width: 100%;
-   width: 100vw;
-   height: 100%;
-   height: 100vh;
-   min-height: 100%;
-   min-height: 100vh;
 }
 .instastckr {
    position: absolute;
    margin-left: -462px;
    bottom: 0vh;
    left: 50vw;
+   padding: 0px;
 }
 #mockup {
    width: 515px;
@@ -68,7 +67,7 @@ header {
 }
 @media (max-width: 893px) {
    #mockup {
-      margin: auto;
+      display: none;
    }
 }
 #logo-block {
@@ -112,14 +111,40 @@ header {
    background-size: 132px 40px;
    background-repeat: no-repeat;
 }
+@media (max-width: 893px) {
+   .instastckr {
+      width: 100%;
+      margin: auto;
+      bottom: 0;
+      left: 0;
+   }
+   #logo-block {
+      display: block;
+      margin: auto;
+      vertical-align: bottom;
+   }
+   #logo {
+      display: block;
+      margin: auto;
+   }
+   #description {
+      text-align: center;
+   }
+   #store-block {
+      padding-right: 0px;
+   }
+   #app-store {
+      margin-left: 15px;
+   }
+}
 
 #pickupline-text {
-   padding-top: 61px;
-   padding-bottom: 51px;
+   padding-top: 80px;
+   padding-bottom: 37px;
 }
 @media (max-width: 767px) {
    #pickupline-text {
-      padding-top: 33px;
+      padding-top: 38px;
       padding-bottom: 23px;
    }
 }
