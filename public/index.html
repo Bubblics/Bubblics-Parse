@@ -18,7 +18,7 @@
       <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/57.png" />
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:200,300">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400">
       <link rel="stylesheet" href="/assets/css/animate.css">
       <link rel="stylesheet" href="/assets/css/site.css">
    </head>
@@ -36,13 +36,28 @@
                   <img id="logo" src="/assets/images/instastckr_logo@2x.png"/>
                   <h2 id="description">Say more with your photos using special emojis and customizable stickers.</h2>
                   <div id="store-block" class="container-fluid">
-            			<a id="app-store" target="_blank"></a>
+            			<a id="app-store" target="_blank" data-toggle="modal" data-target="#myModal" style="cursor: pointer;"></a>
             			<a id="play-store" href="https://play.google.com/store/apps/details?id=com.instastckr" target="_blank"></a>
                   </div>
                </div>
             </div>
          </div>
       </header>
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <a id="modal-close" data-dismiss="modal" style="cursor: pointer;"></a>
+               <h5 id="modal-title">Coming Soon!</h5>
+               <h6 id="modal-description">We will let you know when the iPhone app is ready (No spam)</h6>
+               <div>
+                  <input id="modal-input" placeholder="Enter your Email" type="email" autocomplete="off" autocorrect="off" autocapitalize="off"
+spellcheck="false"></input>
+                  <button id="modal-submit" style="cursor: pointer;" onclick="subscribe()">NOTIFY ME</button>
+               </div>
+            </div>
+        </div>
+      </div>
 
       <div id="pickupline">
          <h3 id="pickupline-text">Add stickers on your photos<br><b>&</b><br>Share on Instagram</h3>
@@ -181,6 +196,29 @@
                $("#yesiam").css("display", "none");
             }
          });
+      </script>
+      <script>
+         $('.modal').on('shown.bs.modal', function() {
+            $('body').css('position','fixed');
+            $("#modal-input").focus();
+         });
+         $('.modal').on('hidden.bs.modal', function() {
+            $('body').css('position','relative');
+         });
+      </script>
+
+      <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+      <script>
+         function subscribe() {
+            var email = $("#modal-input").val();
+            if (email && email.length > 0) {
+               Parse.initialize("xRmLMsYx5yWnE3JWYPYIToUm0NPqacXVr8jFoU6C", "nTokTB9of3iigpwBevZny1T1FnvLwwaZ6iWVN0sb");
+               var Subscription = Parse.Object.extend("Subscription");
+               var subscription = new Subscription();
+               subscription.save({email: email});
+            }
+            $('#myModal').modal("hide");
+         }
       </script>
    </body>
 </html>

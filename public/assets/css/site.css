@@ -1,5 +1,5 @@
 /* Basic Styles */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, button {
    font-family: "Work Sans";
    font-weight: 200;
    color: #000000;
@@ -22,8 +22,21 @@ h4, .h4 {
    letter-spacing: 0.18px;
    line-height: 170%;
 }
+h5, .h5 {
+   font-size: 28px;
+   letter-spacing: 0.28px;
+   line-height: 140%;
+   font-weight: 400;
+}
+h6, .h6 {
+   font-size: 20px;
+   letter-spacing: 0.20px;
+   line-height: 170%;
+   color: #898989;
+   font-weight: 200;
+}
 @media (max-width: 767px) {
-   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, button {
       font-weight: 300;
    }
    h2, .h2 {
@@ -35,6 +48,16 @@ h4, .h4 {
       font-size: 18px;
       letter-spacing: 0.18px;
       line-height: 160%;
+   }
+   h5, .h5 {
+      font-size: 20px;
+      letter-spacing: 0.20px;
+      line-height: 160%;
+   }
+   h6, .h6 {
+      font-size: 16px;
+      letter-spacing: 0.16px;
+      line-height: 170%;
    }
 }
 
@@ -255,4 +278,165 @@ header {
    width: 260px;
    height: 260px;
    margin: 15px;
+}
+
+/* Modal Style */
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal-content {
+   -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+   -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+   -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+   box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
+.modal-backdrop {
+   opacity:0.1 !important;
+}
+*:focus{
+   outline: 0;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:   #cccccc;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:   #cccccc;
+   opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:   #cccccc;
+   opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:   #cccccc;
+}
+textarea, input[type="text"] {
+   -webkit-appearance: none;
+}
+
+.modal-content {
+   width: 750px;
+   height: 320px;
+   border: none;
+   border-radius: 3px;
+   margin-left: -75px;
+}
+#modal-close {
+   display: inline-block;
+   width: 51px;
+   height: 51px;
+   background-image: url(/assets/images/popup_delete@2x.png);
+   background-size: 51px 51px;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+}
+#modal-title {
+   padding-top: 64px;
+}
+#modal-description {
+   padding-top: 30px;
+}
+#modal-input {
+   position: absolute;
+   margin-top: 20px;
+   margin-left: 70px;
+   padding-left: 20px;
+   width: 400px;
+   height: 70px;
+   border-radius: 3px;
+   border: 1px solid;
+   border-color: #cccccc;
+   color: #000000;
+   font-size: 20px;
+   font-weight: 200;
+   letter-spacing: 1.5px;
+}
+#modal-submit {
+   position: absolute;
+   margin-top: 20px;
+   margin-left: 490px;
+   width: 190px;
+   height: 70px;
+   border-radius: 3px;
+   border: none;
+   background: #f15f26;
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: 400;
+   letter-spacing: 0.5px;
+}
+@media (max-width: 830px) {
+   #modal-title {
+      padding-top: 26px;
+      font-weight: 400;
+   }
+   #modal-description {
+      padding-top: 17px;
+      font-weight: 300;
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+   #modal-input {
+      position: absolute;
+      margin-top: 12px;
+      margin-left: 27px;
+      padding-left: 12px;
+      width: 246px;
+      height: 40px;
+      border-radius: 2px;
+      border: 1px solid;
+      border-color: #cccccc;
+      color: #000000;
+      font-size: 15px;
+      font-weight: 300;
+      -webkit-appearance: none;
+   }
+   #modal-submit {
+      position: absolute;
+      margin-top: 62px;
+      margin-left: 27px;
+      width: 246px;
+      height: 40px;
+      border-radius: 2px;
+      border: none;
+      background: #f15f26;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+   }
+   .modal-content {
+      width: 300px;
+      height: 160px;
+      margin-left: 150px;
+      border-radius: 2px;
+   }
+   #modal-close {
+      width: 32px;
+      height: 32px;
+      background-size: 32px 32px;
+   }
+}
+@media (max-width: 767px) {
+   .modal-content {
+      width: 300px;
+      height: 260px;
+      margin-left: 0px;
+      border-radius: 2px;
+   }
 }
