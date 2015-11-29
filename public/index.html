@@ -51,6 +51,7 @@
                <h5 id="modal-title">Coming Soon!</h5>
                <h6 id="modal-description">We will let you know when the iPhone app is ready (No spam)</h6>
                <div>
+                  <h4 id="modal-thank-you">Thank You :)</h4>
                   <input id="modal-input" placeholder="Enter your Email" type="email" autocomplete="off" autocorrect="off" autocapitalize="off"
 spellcheck="false"></input>
                   <button id="modal-submit" style="cursor: pointer;" onclick="subscribe()">NOTIFY ME</button>
@@ -204,6 +205,9 @@ spellcheck="false"></input>
          });
          $('.modal').on('hidden.bs.modal', function() {
             $('body').css('position','relative');
+            $('#modal-input').css("display", "block");
+            $('#modal-submit').css("display", "block");
+            $('#modal-thank-you').css("display", "none");
          });
       </script>
 
@@ -217,7 +221,9 @@ spellcheck="false"></input>
                var subscription = new Subscription();
                subscription.save({email: email});
             }
-            $('#myModal').modal("hide");
+            $('#modal-input').css("display", "none");
+            $('#modal-submit').css("display", "none");
+            $('#modal-thank-you').css("display", "block");
          }
       </script>
    </body>
