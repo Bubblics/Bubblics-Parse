@@ -460,3 +460,7 @@ textarea, input[type="text"] {
       border-radius: 2px;
    }
 }
+
+#mixpanel {
+  margin-bottom: 20px;
+}
