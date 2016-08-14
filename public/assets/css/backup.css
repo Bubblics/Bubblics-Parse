@@ -20,12 +20,11 @@
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', endColorstr='#a6ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-
 /* CSS for imaage source */
 #logo {
-   width: 203px;
-   height: 24px;
-   background:url(/assets/images/instastckr_logo.png) no-repeat;
+   width: 200px;
+   height: 47px;
+   background:url(/assets/images/weblogo.png) no-repeat;
 }
 #mockup {
    width: 529px;
@@ -35,7 +34,7 @@
 #hashtag {
    width: 105px;
    height: 28px;
-   background:url(/assets/images/instastckr_oninstagram.png) no-repeat;
+   background:url(/assets/images/oninstagram.png) no-repeat;
 }
 #instapic01 {
    width: 260px;
@@ -75,9 +74,9 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-devicepixel-ratio: 1.5),
 only screen and (min-resolution: 1.5dppx) {
    #logo {
-      width: 202.5px;
-      height: 23px;
-      background:url(/assets/images/instastckr_logo@2x.png) no-repeat;
+      width: 200px;
+      height: 47px;
+      background:url(/assets/images/weblogo@2x.png) no-repeat;
       background-size: 202.5px 23px;
    }
    #mockup {
@@ -89,7 +88,7 @@ only screen and (min-resolution: 1.5dppx) {
    #hashtag {
       width: 105px;
       height: 27px;
-      background:url(/assets/images/instastckr_oninstagram@2x.png) no-repeat;
+      background:url(/assets/images/oninstagram@2x.png) no-repeat;
       background-size: 105px 27px;
    }
    #instapic01 {

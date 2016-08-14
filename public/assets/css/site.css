@@ -114,8 +114,8 @@ header {
    margin-bottom: 43px;
 }
 #logo {
-   width: 202.5px;
-   height: 23px;
+   width: 200px;
+   height: 47px;
 }
 #description {
    text-align: left;
@@ -256,7 +256,7 @@ header {
 #hashtag {
    width: 105px;
    height: 27px;
-   background:url(/assets/images/instastckr_oninstagram@2x.png) no-repeat;
+   background:url(/assets/images/oninstagram@2x.png) no-repeat;
    background-size: 105px 27px;
    margin-bottom: 30px;
 }
