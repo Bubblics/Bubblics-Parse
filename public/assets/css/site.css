@@ -86,11 +86,11 @@ header {
    position: absolute;
    display: none;
 }
-#instastckr {
+#bubblics {
    position: relative;
    height: 4000px;
 }
-.instastckr {
+.bubblics {
    position: absolute;
    margin-left: -462px;
    bottom: 0vh;
@@ -148,7 +148,7 @@ header {
    background-repeat: no-repeat;
 }
 @media (max-width: 893px) {
-   .instastckr {
+   .bubblics {
       width: 100%;
       margin: auto;
       bottom: 0;
